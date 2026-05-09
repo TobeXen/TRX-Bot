@@ -33,6 +33,10 @@ const invite = require("./reactions/invite")
 const help = require("./commands/help")
 const trx2koptpt1 = require("./commands/trx-2kopt-pt1")
 const nuke = require("./commands/nuke")
+const balance = require("./commands/economy/balance")
+const work = require("./commands/economy/work")
+const pay = require("./commands/economy/pay")
+const leaderboard = require("./commands/economy/leaderboard")
 const client = new Client({ intents: [ 
   GatewayIntentBits.DirectMessages,
   GatewayIntentBits.Guilds,
@@ -84,6 +88,10 @@ gameroles()
 invite()
 help()
 trx2koptpt1()
+balance()
+work()
+pay()
+leaderboard()
 //nuke()
 
 client.on('ready', () => {

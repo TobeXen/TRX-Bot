@@ -89,8 +89,8 @@ check additional leaderboards ↓`, components: [leaderboardDD] });
               const ledblog = {
                 type: `rich`,
                 color: 16763904,
-                title: `Command Log for </trx-nba2k:1329860603514191893>:`,
-                description: `<@${interaction.member.id}> has used the </trx-nba2k:1329860603514191893> in https://discord.com/channels/${interaction.guild.id}/${interaction.channel.id}/${interaction.id}`,
+                title: `Command Log for </trx-nba2k:1351217748893503668>:`,
+                description: `<@${interaction.member.id}> has used the </trx-nba2k:1351217748893503668> in https://discord.com/channels/${interaction.guild.id}/${interaction.channel.id}/${interaction.id}`,
                 timestamp: new Date().toISOString(),
                 footer: {
                   text: 'Powered by TRX',

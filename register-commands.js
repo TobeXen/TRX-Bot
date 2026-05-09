@@ -236,6 +236,44 @@ const commands = [
     //name: "nuke",
     //description: "hehe",
   //},
+    {
+    name: "balance",
+    description: "Check your or another user's balance",
+    options: [
+      {
+        name: "user",
+        description: "The user you want to check",
+        type: ApplicationCommandOptionType.User,
+        required: false,
+      },
+    ]
+  },
+  {
+    name: "work",
+    description: "Work to earn some virtual coins (50-199)",
+  },
+  {
+    name: "pay",
+    description: "Transfer coins to another user",
+    options: [
+      {
+        name: "target",
+        description: "The user you want to pay",
+        type: ApplicationCommandOptionType.User,
+        required: true,
+      },
+      {
+        name: "amount",
+        description: "How many coins to send",
+        type: ApplicationCommandOptionType.Integer,
+        required: true,
+      },
+    ]
+  },
+  {
+    name: "leaderboard",
+    description: "Shows the top 10 richest users in the bot",
+  },
 ];
 
 const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
